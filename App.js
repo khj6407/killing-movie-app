@@ -8,7 +8,7 @@ class App extends React.Component {
       <View style={styles.container}>
         <View style={styles.btnArea}>
           <CommonBtn>Popular Movie</CommonBtn>
-          <CommonBtn>NowPlaying Movie</CommonBtn>
+          <CommonBtn>NowPlaying</CommonBtn>
         </View>
       </View>
     );
