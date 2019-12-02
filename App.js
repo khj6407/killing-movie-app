@@ -44,7 +44,11 @@ class App extends React.Component {
 
         {/* loading이 트루라면? 앞에꺼 실행 : 아니면 뒤에거 */}
         {loading ? (
-          viewPopular.map(movie => <Text>{movie.title}</Text>)
+          viewPopular.map(movie => (
+            <View key={movie.id}>
+              <Text>{movie.title}</Text>
+            </View>
+          ))
         ) : (
           <Text>loading...</Text>
         )}
